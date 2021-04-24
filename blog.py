@@ -18,9 +18,10 @@ def hello_user(name, user_id):
     return 'Hello ' + name + ' your id is ' + str(user_id)
 
 
-@app.route('/template-flask_demo_project')
+@app.route('/template-test')
 def template_tets():
-    return render_template('flask_demo_project.html')
+    return render_template('test.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
